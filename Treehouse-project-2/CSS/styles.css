@@ -1,0 +1,114 @@
+* {
+    font-family: 'Crimson Text', serif;
+    font-family: 'Open Sans', sans-serif; 
+    text-align: center;
+}
+html {
+    background-color: #fafafa;
+}
+body {
+    padding: 5%;
+}
+
+img {
+    max-width: 100%;
+}
+.main-nav a {
+    text-decoration: none;
+    margin-top: 5px;
+    font-weight: bold;
+}
+h1 {
+    font-family: 'Open Sans', sans-serif;
+}
+h2 {
+    font-family: 'Open Sans', sans-serif;
+}
+p {
+    font-family: 'Crimson Text', serif;
+}
+.container,
+.project {
+    background-color: white;
+}
+
+img {
+    width: 200px;
+}
+.item {
+    max-width: auto;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (max-width: 320px) {
+        .container {
+        display: inline-block;
+    }
+    
+}    
+
+@media (min-width: 768px) {
+    .main-nav {
+        display: flex;
+        width: 335px;
+        justify-content: space-between;
+        text-align: center;
+        
+    }
+    .banner {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .profile-pic {
+        padding-top: 0;
+        width: 44%;
+        height: auto;
+    }
+    .bio {
+        width: 53%;
+        padding-right: 25px;
+        text-align: left;
+    }
+    .project {
+        float: left;
+        width: 45%;
+    }
+}
+
+
+@media (min-width: 1025px) {
+    .main-nav {
+        display: flex;
+        width: 335px;
+        justify-content: space-between;
+        text-align: center;
+        
+    }
+    .banner {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    p {
+        font-size: 31px;
+    }
+    .profile-pic {
+        padding-top: 0;
+        width: 44%;
+        height: auto;
+    }
+    .bio {
+        width: 53%;
+        padding-right: 25px;
+        text-align: left;
+    }
+    img {
+        width: 400px;
+    }
+    .project {
+        float: left;
+        width: 33%;
+    }
+}
