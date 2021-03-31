@@ -17,6 +17,8 @@ img {
     text-decoration: none;
     margin-top: 5px;
     font-weight: bold;
+    list-style: none;
+    padding-left: 0;
 }
 h1 {
     font-family: 'Open Sans', sans-serif;
@@ -26,14 +28,10 @@ h2 {
 }
 p {
     font-family: 'Crimson Text', serif;
+    margin-left: 16px;
 }
-.container,
-.project {
+.wrapper {
     background-color: white;
-}
-
-img {
-    width: 200px;
 }
 .item {
     max-width: auto;
@@ -47,7 +45,38 @@ img {
         .container {
         display: inline-block;
     }
-    
+        .main-nav {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding-top: 0%;
+        padding-left: 5px;
+        
+    }
+    img {
+        width: 275px;
+        margin-left: 5px;
+    }
+    .contact {
+        list-style: none;
+    }
+    .main-footer {
+        display: flex;
+    }
+    .name-footer {
+        float: left;
+        text-align: left;
+    }
+    .top {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        padding-left: 51px;
+        padding-top: 20px;
+    }
+    .footer-nav {
+        display: none;
+    }
 }    
 
 @media (min-width: 768px) {
@@ -55,8 +84,16 @@ img {
         display: flex;
         width: 335px;
         justify-content: space-between;
-        text-align: center;
-        
+        text-align: center;   
+    }
+    .name {
+        padding-right: 66px;
+        padding-bottom: 15px;
+    }
+    .main-nav {
+        list-style: none;
+        padding-top: 0%;
+        padding-left: 116px;
     }
     .banner {
         display: flex;
@@ -76,17 +113,59 @@ img {
         float: left;
         width: 45%;
     }
+    img {
+        width: 296px;
+    }
+
+    h3 {
+        padding-right: 53px;
+    }
+    h4 {
+        padding-right: 308px;
+    }
+    .contact {
+        list-style: none;
+    }
+    .main-footer {
+        display: flex;
+    }
+    .name-footer {
+        float: left;
+        text-align: left;
+    }
+    .footer-nav {
+        display: flex;
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+        list-style: none;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+        margin: auto;
+    }
+    .top {
+        display: none;
+    }
+    .con {
+        padding-left: 291px;
+        font-size: 20px;
+    }
 }
 
 
+
 @media (min-width: 1025px) {
-    .main-nav {
+      .main-header {
         display: flex;
-        width: 335px;
-        justify-content: space-between;
-        text-align: center;
-        
+        justify-content: space-between;   
+        padding-top: 0;  
     }
+    .main-nav {
+        list-style: none;
+        padding-top: 0%;
+    }
+
     .banner {
         display: flex;
         flex-direction: row-reverse;
@@ -105,10 +184,40 @@ img {
         text-align: left;
     }
     img {
-        width: 400px;
+        width: 283px;
     }
     .project {
         float: left;
         width: 33%;
+        padding-top: 20px;
+    }
+    .proj-info {
+        text-align: center;
+        font-size: 23px;
+    }
+    .contact {
+        list-style: none;
+    }
+    .main-footer {
+        display: flex;
+    }
+    .name-footer {
+        float: left;
+        text-align: left;
+    }
+    .footer-nav a {
+        display: flex;
+        list-style: none;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+        margin: auto;
+    }
+    .top {
+        display: none;
+    }
+    .con {
+        padding-left: 291px;
+        font-size: 20px;
     }
 }
