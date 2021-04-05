@@ -21,6 +21,7 @@ img {
     font-weight: bold;
     list-style: none;
     padding-left: 0;
+    color: black;
 }
 .main-nav {
     display: flex;
@@ -28,6 +29,7 @@ img {
     list-style: none;
     padding-top: 0%;
     padding-left: 5px;
+    
     
 }
 .container {
@@ -44,18 +46,15 @@ p {
     font-family: 'Crimson Text', serif;
     margin-left: 16px;
 }
-.wrapper {
-    background-color: white;
-}
-.item {
-    max-width: auto;
-}
 .main-footer {
     display: flex;
 }
 .name-footer {
     float: left;
     text-align: left;
+}
+.contact {
+    list-style: none;
 }
 .top {
     text-decoration: none;
@@ -89,6 +88,7 @@ p {
         justify-content: space-evenly;
         align-content: center;
         list-style: none;
+        text-decoration: none;
         padding-left: 180px;
         
     }
@@ -122,7 +122,7 @@ p {
     }
 
     h3 {
-        padding-right: 53px;
+        padding-right: 11px;
     }
     h4 {
         padding-right: 308px;
@@ -140,9 +140,7 @@ p {
     }
     .footer-nav {
         display: flex;
-        color: black;
         font-weight: bold;
-        text-decoration: none;
         list-style: none;
         flex-direction: row;
         width: 80%;
@@ -150,8 +148,13 @@ p {
         margin: auto;
         padding-left: 260px;
     }
+    .footer-nav a {
+        color: black;
+        text-decoration: none;
+    }
     .top {
         display: none;
+        text-decoration: none;
     }
     .con {
         padding-left: 291px;
@@ -161,15 +164,22 @@ p {
 
 
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
       .main-header {
         display: flex;
         justify-content: space-between;   
         padding-top: 0;  
     }
+    .name {
+        padding-right: 0px;
+        padding-bottom: 15px;
+        margin-top: 0;
+        padding-left: 47px;
+    }
     .main-nav {
         list-style: none;
         padding-top: 0%;
+        color: black;
     }
 
     .banner {
@@ -182,12 +192,13 @@ p {
     .profile-pic {
         padding-top: 0;
         width: 44%;
-        height: auto;
+        height: 218px;
     }
     .bio {
         width: 53%;
         padding-right: 25px;
         text-align: left;
+        font-size: 21px;
     }
     img {
         width: 283px;
